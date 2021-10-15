@@ -64,5 +64,3 @@ services:
       ME_CONFIG_MONGODB_AUTH_PASSWORD_FILE: /run/secrets/mongo_user_password
       ME_CONFIG_SITE_COOKIESECRET_FILE: /run/secrets/mongo_express_cookie_secret
       ME_CONFIG_SITE_SESSIONSECRET_FILE: /run/secrets/mongo_express_session_secret
-    volumes:
-      - ./mongo-express/wait-for-mongo.sh:/docker-entrypoint-initdb.d/wait-for-mongo.sh
