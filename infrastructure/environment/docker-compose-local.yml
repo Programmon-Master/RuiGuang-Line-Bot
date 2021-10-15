@@ -1,0 +1,68 @@
+version: '3.4'
+
+secrets:
+  mongo_url:
+    external: true
+  mongo_root_username:
+    external: true
+  mongo_root_password:
+    external: true
+  mongo_user_username:
+    external: true
+  mongo_user_password:
+    external: true
+  mongo_express_admin_username:
+    external: true
+  mongo_express_admin_password:
+    external: true
+  mongo_express_cookie_secret:
+    external: true
+  mongo_express_session_secret:
+    external: true
+
+services:
+  mongo:
+    image: mongo:5.0.3-focal
+    ports:
+      - 27017:27017
+    secrets:
+      - mongo_root_username
+      - mongo_root_password
+      - mongo_user_username
+      - mongo_user_password
+    environment:
+      MONGO_INITDB_DATABASE: 'admin'
+      MONGO_INITDB_ROOT_USERNAME_FILE: /run/secrets/mongo_root_username
+      MONGO_INITDB_ROOT_PASSWORD_FILE: /run/secrets/mongo_root_password
+      MONGO_DATABASE: 'linebot'
+      MONGO_USERNAME_FILE: /run/secrets/mongo_user_username
+      MONGO_PASSWORD_FILE: /run/secrets/mongo_user_password
+    volumes:
+      - ./mongodb/data/:/data/db
+      - ./mongodb/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh
+
+  mongo-express:
+    image: mongo-express:0.54.0
+    ports:
+      - 8081:8081
+    secrets:
+      - mongo_user_username
+      - mongo_user_password
+      - mongo_express_admin_username
+      - mongo_express_admin_password
+      - mongo_express_cookie_secret
+      - mongo_express_session_secret
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_MONGODB_PORT: 27017
+      ME_CONFIG_OPTIONS_EDITORTHEME: mbo
+      ME_CONFIG_BASICAUTH_USERNAME_FILE: /run/secrets/mongo_express_admin_username
+      ME_CONFIG_BASICAUTH_PASSWORD_FILE: /run/secrets/mongo_express_admin_password
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: 'false'
+      ME_CONFIG_MONGODB_AUTH_DATABASE: 'linebot'
+      ME_CONFIG_MONGODB_AUTH_USERNAME_FILE: /run/secrets/mongo_user_username
+      ME_CONFIG_MONGODB_AUTH_PASSWORD_FILE: /run/secrets/mongo_user_password
+      ME_CONFIG_SITE_COOKIESECRET_FILE: /run/secrets/mongo_express_cookie_secret
+      ME_CONFIG_SITE_SESSIONSECRET_FILE: /run/secrets/mongo_express_session_secret
+    volumes:
+      - ./mongo-express/wait-for-mongo.sh:/docker-entrypoint-initdb.d/wait-for-mongo.sh
