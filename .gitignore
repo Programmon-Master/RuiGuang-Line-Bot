@@ -119,3 +119,6 @@ dist
 
 # Bottender
 .sessions/
+
+# MongoDB Data
+infrastructure/environment/mongodb/data/*
