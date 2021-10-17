@@ -14,6 +14,11 @@ TBD;
 
 ## Development
 
+### Environment Setup
+
+1. Setup infrastructure/environment with docker swarm and docker secrets (See README.md in folder)
+2. Copy `.env.example` to `.env` and fill up fields you need.
+
 ### How to start
 
 1. Run `node server.js` open http server on 5000 port.
