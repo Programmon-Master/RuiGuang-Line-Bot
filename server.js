@@ -5,8 +5,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const { bottender } = require('bottender');
 
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const mainRouter = require('./routes/api/controller/mainRouter');
 
 const app = bottender({
   dev: process.env.NODE_ENV !== 'production',
@@ -39,12 +38,7 @@ app.prepare().then(() => {
   server.use(cookieParser());
   server.use(express.static(path.join(__dirname, 'public')));
 
-  server.use('/', indexRouter);
-  server.use('/users', usersRouter);
-
-  server.get('/api', (req, res) => {
-    res.json({ ok: true });
-  });
+  server.use('/api', mainRouter);
 
   server.all('*', (req, res) => {
     return handle(req, res);
