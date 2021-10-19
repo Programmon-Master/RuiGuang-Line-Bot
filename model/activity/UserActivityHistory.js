@@ -13,9 +13,8 @@ const { PointCardSchema } = require('./PointCard');
  * - @param endDatetime: activity end time
  * - @param pointcard: PointCardSchema, attend record of activity
  */
-
 const UserActivityHistorySchema = new Schema({
-    uid: { type: String, required: true },
+    uid: { type: String, required: true, unique: true },
     activity: [
         {
             name: { type: String, required: true },
@@ -25,6 +24,7 @@ const UserActivityHistorySchema = new Schema({
         }
     ],
 });
+
 const UserActivityHistory = mongoose.model('UserActivityHistory', UserActivityHistorySchema);
 
 module.exports = {
