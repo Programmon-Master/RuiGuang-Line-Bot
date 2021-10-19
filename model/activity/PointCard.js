@@ -11,6 +11,7 @@ const Schema = mongoose.Schema;
  * - @param value: dynamic type of value for this field
  */
 const PointCardSchema = new Schema({
+    status: { type: Number, default: 0 },
     cardField: [
         {
             name: { type: String, required: true },
