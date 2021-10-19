@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const mainRouter = require('./routes/api/controller/mainRouter');
 
 const app = bottender({
-  dev: process.env.NODE_ENV !== 'production',
+    dev: process.env.NODE_ENV !== 'production',
 });
 
 const port = Number(process.env.PORT) || 5000;
@@ -17,50 +17,78 @@ const port = Number(process.env.PORT) || 5000;
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
-  const server = express();
+    const server = express();
 
-  // Setup logger
-  server.use(logger((process.env.NODE_ENV !== 'production') ? "dev" : "production" ));
+    function listen() {
+        /**
+         * Establish port listener when server ready
+         */
+        server.listen(port, (err) => {
+            if (err) throw err;
+            console.log(`> Ready on http://localhost:${port}`);
+        });
+    }
 
-  // If your express server is behind a proxy, you need to call `enable('trust proxy')`
-  // See: http://expressjs.com/en/guide/behind-proxies.html#express-behind-proxies
-  // server.enable('trust proxy');
+    /**
+     * Bind mongoose event and coneect to mongodb
+     * @returns MongoClient Object
+     */
+    function connect() {
+        mongoose.connection
+            .on('error', console.log)
+            .on('disconnected', connect)
+            .once('open', listen);
 
-  // Setup views
-  server.set('views', path.join(__dirname, 'views'));
-  server.set('view engine', 'ejs');
+        // Default connection timeout: http://mongodb.github.io/node-mongodb-native/3.1/reference/faq/
+        // Others attribute: https://mongoosejs.com/docs/connections.html
+        return mongoose.connect(process.env.MONGO_URL, {
+            maxPoolSize: 10,
+            minPoolSize: 1,
+            autoIndex: process.env.NODE_ENV !== 'production',
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
+    }
 
-  const verify = (req, _, buf) => {
-    req.rawBody = buf.toString();
-  };
-  server.use(express.json({ verify }));
-  server.use(express.urlencoded({ extended: false, verify }));
+    // Setup logger
+    server.use(logger((process.env.NODE_ENV !== 'production') ? "dev" : "production" ));
 
-  server.use(cookieParser());
-  server.use(express.static(path.join(__dirname, 'public')));
+    // If your express server is behind a proxy, you need to call `enable('trust proxy')`
+    // See: http://expressjs.com/en/guide/behind-proxies.html#express-behind-proxies
+    // server.enable('trust proxy');
 
-  server.use('/api', mainRouter);
+    // Setup views
+    server.set('views', path.join(__dirname, 'views'));
+    server.set('view engine', 'ejs');
 
-  server.use('/webhooks', handle);
+    const verify = (req, _, buf) => {
+        req.rawBody = buf.toString();
+    };
+    server.use(express.json({ verify }));
+    server.use(express.urlencoded({ extended: false, verify }));
 
-  // Catch 404 and forward to error handler
-  server.use(function(req, res, next) {
-    next(createError(404));
-  });
+    server.use(cookieParser());
+    server.use(express.static(path.join(__dirname, 'public')));
 
-  // Error handler
-  server.use(function(err, req, res, next) {
-    // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = process.env.NODE_ENV !== 'production' ? err : {};
+    server.use('/api', mainRouter);
 
-    // render the error page
-    res.status(err.status || 500);
-    res.render('error');
-  });
+    server.use('/webhooks', handle);
 
-    server.listen(port, (err) => {
-      if (err) throw err;
-      console.log(`> Ready on http://localhost:${port}`);
+    // Catch 404 and forward to error handler
+    server.use(function(req, res, next) {
+        next(createError(404));
     });
+
+    // Error handler
+    server.use(function(err, req, res, next) {
+        // set locals, only providing error in development
+        res.locals.message = err.message;
+        res.locals.error = process.env.NODE_ENV !== 'production' ? err : {};
+
+        // render the error page
+        res.status(err.status || 500);
+        res.render('error');
+    });
+
+    connect();
 });
