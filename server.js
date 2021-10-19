@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const { bottender } = require('bottender');
+const mongoose = require('mongoose');
 
 const mainRouter = require('./routes/api/controller/mainRouter');
 
@@ -40,9 +41,7 @@ app.prepare().then(() => {
 
   server.use('/api', mainRouter);
 
-  server.all('*', (req, res) => {
-    return handle(req, res);
-  });
+  server.use('/webhooks', handle);
 
   // Catch 404 and forward to error handler
   server.use(function(req, res, next) {
@@ -60,8 +59,8 @@ app.prepare().then(() => {
     res.render('error');
   });
 
-  server.listen(port, (err) => {
-    if (err) throw err;
-    console.log(`> Ready on http://localhost:${port}`);
-  });
+    server.listen(port, (err) => {
+      if (err) throw err;
+      console.log(`> Ready on http://localhost:${port}`);
+    });
 });
