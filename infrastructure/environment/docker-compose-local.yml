@@ -20,6 +20,9 @@ secrets:
   mongo_express_session_secret:
     external: true
 
+volumes:
+  mongodb:
+
 services:
   mongo:
     image: mongo:5.0.3-focal
@@ -38,7 +41,7 @@ services:
       MONGO_USERNAME_FILE: /run/secrets/mongo_user_username
       MONGO_PASSWORD_FILE: /run/secrets/mongo_user_password
     volumes:
-      - ./mongodb/data/:/data/db
+      - mongodb:/data/db
       - ./mongodb/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh
 
   mongo-express:

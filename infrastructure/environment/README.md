@@ -58,6 +58,11 @@ printf "Web 介面 session 密鑰" | docker secret create mongo_express_session_
 ## Command
 
 ### Basic
+* Docker volume 建立
+    > 由於 Windows 無法直接掛載 fs folder 到容器中(會產生 Operation denied 問題)，因此需建立 Docker volume 來掛載
+```
+docker volume create
+```
 * Host swarm 環境建立 (為了使用 Secret)
 ```
 docker swarm init
