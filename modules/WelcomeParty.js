@@ -29,15 +29,22 @@ const stamp = {
   '運動動茲部落': {
     stamp: PICBDIR + 'stamp_sport.png',
     coord: [289, 178]
+  },
+  '闖關完成': {
+    stamp: PICBDIR + 'finished.png',
+    coord: [100, 81]
   }
+}
+const ErrorLogger =  (err, status, res) => {
+  console.log(err)
+  res.status(status).send({msg: err});
 }
 
 module.exports = class WelcomeParty {
-  #uid; #stage; #res;
-  constructor(req, res) {
+  #req; #res;
 
-    this.#uid = req.body.uid;
-    this.#stage = req.body.stage;
+  constructor(req, res) {
+    this.#req = req;
     this.#res = res;
   }
 
@@ -89,7 +96,29 @@ module.exports = class WelcomeParty {
   }
 
 
-  #Composite(pointcard, output, uid, stage, res) {
+  Composite(pointcard, output, stage, res) {
+    const tmp = output.split('.')[0]+'_tmp.png';
+    sharp.cache(false);
+    sharp(pointcard)
+      .composite([{ 
+        input: stamp[stage].stamp, 
+        left: stamp[stage].coord[0],
+        top: stamp[stage].coord[1],
+      }])
+      .toFile(tmp, (err, info) => {
+        if(err) { ErrorLogger('Composite error, '+err, 400, res); return; }
+
+        fs.rename(tmp, output, (err) => {
+          if(err) { ErrorLogger('Rename file error, '+err, 400, res); return; }
+
+          console.log('Stamped!!')
+          res.status(200).send({msg: 'success!!'});
+        });
+      });
+  }
+
+
+  #UpdateCardStatus(Composite, pointcard, output, uid, stage, res) {
     UserActivityHistory.updateOne({
       'uid': uid
     }, 
@@ -100,74 +129,71 @@ module.exports = class WelcomeParty {
       { "actId.name": actName },
       { "cardId.name": stage }
     ] }, function(err, result) {
-      if(err) {
-        console.log('Update pointcard status error, '+err);
-        res.status(400).send({msg: err});
-      }
-      console.log('Update pointcard status success!!');
+      if(err) { ErrorLogger('Update pointcard status error, '+err, 400, res); return; }
 
-      const tmp = output.split('.')[0]+'_tmp.png';
-      sharp.cache(false);
-      sharp(pointcard)
-        .composite([{ 
-          input: stamp[stage].stamp, 
-          left: stamp[stage].coord[0],
-          top: stamp[stage].coord[1],
-        }])
-        .toFile(tmp, (err, info) => {
-          if(!err) {
-            fs.rename(tmp, output, (err) => {
-              if(err) {
-                console.log('Rename file error!!')
-                res.status(400).send({msg: err});
-              } else {
-                console.log('Stamped!!')
-                res.status(200).send({msg: 'success!!'});
-              }
-            });
-          } else {
-            console.log('Composite error!!')
-            res.status(400).send({msg: err});
-          }
-        });
-      return;
+      console.log('Update pointcard status success!!');
+      Composite(pointcard, output, stage, res);
     });
   }
 
 
   Stamped() {
-    const uid = this.#uid;
+    const uid = this.#req.body.uid;
+    const stage = this.#req.body.stage;
     const newUserActivity = this.#NewUserActivity(uid);
-    const Composite = this.#Composite;
+    const UpdateCardStatus = this.#UpdateCardStatus;
+    const Composite = this.Composite;
     const res = this.#res;
-    const stage = this.#stage;
 
     UserActivityHistory.findOne({ uid: uid }, function (err, userActivity) {
-      if(err) {
-        console.log('Query uid error, '+err);
-        res.status(400).send({msg: err});
-        return;
-      }
+      if(err) { ErrorLogger('Query uid error, '+err, 400, res); return; }
   
       if(!userActivity) {
         // create user and activity (async)
         UserActivityHistory.create(newUserActivity, function (err, newUserActivity) {
-          if(err) {
-            console.log('Create new user error, '+err);
-            res.status(400).send({msg: err});
-            return;
-          }
+          if(err) { ErrorLogger('Create new user error, '+err, 400, res); return; }
+
           // create success!
           console.log('Create new user success!!');
-
           const output = PICBDIR + `users/${ uid }.png`;
-          Composite(rawPointcard, output, uid, stage, res);
+          UpdateCardStatus(Composite, rawPointcard, output, uid, stage, res);
         });
       } else {
         const output = PICBDIR + `users/${ uid }.png`;
         const pointcard = PICBDIR + `users/${ uid }.png`;
-        Composite(pointcard, output, uid, stage, res);
+        UpdateCardStatus(Composite, pointcard, output, uid, stage, res);
       }
     });
+  }
+
+
+  Drawed() {
+    const uid = this.#req.body.uid;
+    const res = this.#res;
+    const Composite = this.Composite;
+
+    UserActivityHistory.findOne({ 
+      "uid": uid
+    }, function (err, result) {
+      if(err) { ErrorLogger('Query drawed status error, '+err, 400, res); return; } 
+      if(!result) { ErrorLogger('Cannot get the uid!!', 400, res); return; }
+
+      const act = result.activity.filter(act => act.name===actName);
+      if(act.length !== 1) { ErrorLogger('Multiple same activity', 400, res); return; }
+
+      const point = act[0].pointcard.cardField.filter(card => card.value===true);
+      if(point.length !== 6) { ErrorLogger('Do not collect 6 stamp!!', 400, res); return; }
+      if(act[0].pointcard.status === 1) { ErrorLogger('Already drawed!!', 400, res); return; }
+
+      act[0].pointcard.status = true;
+      result.save().then(savedDoc => {
+        if(savedDoc !== result) { ErrorLogger('Drawed status update error', 400, res); return; }
+
+        const output = PICBDIR + `users/${ uid }.png`;
+        const pointcard = PICBDIR + `users/${ uid }.png`;
+        const stage = '闖關完成';
+        Composite(pointcard, output, stage, res);
+      });
+    })
   }
 }

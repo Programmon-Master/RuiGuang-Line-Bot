@@ -16,5 +16,12 @@ router.post('/checkpoint', function(req, res, next) {
 });
 
 
+// Drawed
+router.post('/drawed', function(req, res, next) {
+  const welcomParty = new WelcomeParty(req, res);
+  welcomParty.Drawed();
+});
+
+
 module.exports = router;
 
