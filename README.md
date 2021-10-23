@@ -1,6 +1,6 @@
 # RuiGuang Line Bot
 
-This bot is design for user who live in "Neihu District, Taipei" or [RuiGuang Social Housing](https://english.gov.taipei/News_Content.aspx?n=A11F01CFC9F58C83&sms=DFFA119D1FD5602C&s=1CFB5F5A2FFB9F72). Hope this proect can be useful for everyone who live together in Neihu.
+This bot is design for user who live in "Neihu District, Taipei" or [RuiGuang Social Housing](https://english.gov.taipei/News_Content.aspx?n=A11F01CFC9F58C83&sms=DFFA119D1FD5602C&s=1CFB5F5A2FFB9F72). Hope this project can be useful for everyone who live together in Neihu.
 
 ## About us
 
