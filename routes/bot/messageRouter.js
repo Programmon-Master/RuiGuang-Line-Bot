@@ -7,6 +7,7 @@ module.exports = async function messageRouter(context) {
         text('周邊生活', (context)=>{ context.sendText('周邊生活'); }),
         text('瑞光社群', (context)=>{ context.sendText('瑞光社群'); }),
         text('活動專區', (context)=>{ context.sendText('活動專區'); }),
+        text('幹你娘', (context)=>{ context.sendText('不可'); }),
         text('*', (context)=>{ context.sendText('你在工三小'); })
     ]);
 }
