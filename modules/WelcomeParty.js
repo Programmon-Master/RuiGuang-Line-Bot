@@ -98,6 +98,8 @@ module.exports = class WelcomeParty {
 
   Composite(pointcard, output, stage, res) {
     const tmp = output.split('.')[0]+'_tmp.png';
+    const url = output.split('/').slice(1).join('/');
+
     sharp.cache(false);
     sharp(pointcard)
       .composite([{ 
@@ -112,7 +114,7 @@ module.exports = class WelcomeParty {
           if(err) { ErrorLogger('Rename file error, '+err, 400, res); return; }
 
           console.log('Stamped!!')
-          res.status(200).send({msg: 'success!!'});
+          res.status(200).send({msg: 'success!!', url: url});
         });
       });
   }
@@ -162,6 +164,37 @@ module.exports = class WelcomeParty {
         const output = PICBDIR + `users/${ uid }.png`;
         const pointcard = PICBDIR + `users/${ uid }.png`;
         UpdateCardStatus(Composite, pointcard, output, uid, stage, res);
+      }
+    });
+  }
+
+
+  GetPointcard() {
+    const uid = this.#req.body.uid;
+    const newUserActivity = this.#NewUserActivity(uid);
+    const res = this.#res;
+
+    UserActivityHistory.findOne({ uid: uid }, function (err, userActivity) {
+      if(err) { ErrorLogger('Query uid error, '+err, 400, res); return; }
+      
+      const output = PICBDIR + `users/${ uid }.png`;
+      const url = output.split('/').slice(1).join('/');
+      if(!userActivity) {
+        // create user and activity (async)
+        UserActivityHistory.create(newUserActivity, function (err, newUserActivity) {
+          if(err) { ErrorLogger('Create new user error, '+err, 400, res); return; }
+
+          // create success!
+          console.log('Create new user success!!');
+          sharp.cache(false);
+          sharp(rawPointcard)
+            .toFile(output, (err, info) => {
+              if(err) { ErrorLogger('Create pointcard error, '+err, 400, res); return; }     
+              res.status(200).send({msg: 'success!!', url: url});
+            });
+        });
+      } else {
+        res.status(200).send({msg: 'success!!', url: url});
       }
     });
   }

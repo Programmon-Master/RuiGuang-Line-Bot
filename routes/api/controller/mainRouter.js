@@ -16,6 +16,13 @@ router.post('/checkpoint', function(req, res, next) {
 });
 
 
+// GetPointcard
+router.post('/getpointcard', function(req, res, next) {
+  const welcomParty = new WelcomeParty(req, res);
+  welcomParty.GetPointcard();
+});
+
+
 // Drawed
 router.post('/drawed', function(req, res, next) {
   const welcomParty = new WelcomeParty(req, res);
