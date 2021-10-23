@@ -1,0 +1,150 @@
+{
+    "type": "carousel",
+    "contents": [
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "hero": {
+          "type": "image",
+          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip10.jpg",
+          "size": "full",
+          "aspectMode": "cover",
+          "aspectRatio": "320:213",
+          "action": {
+            "type": "uri",
+            "label": "action",
+            "uri": "https://fb.ruiguang.link/"
+          }
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "登島慶典：冒險啟程",
+              "weight": "bold",
+              "size": "xl"
+            },
+            {
+              "type": "separator",
+              "margin": "md"
+            },
+            {
+              "type": "text",
+              "text": "具有部落風的「入厝派對」暨「登島慶典」，象徵島民和青創部落在此展開冒險，透過彼此的力量創造燦爛的每一天！☀️\n\n青創邀請您當天一起來共襄盛舉🎉",
+              "wrap": true,
+              "size": "sm",
+              "margin": "lg"
+            },
+            {
+              "type": "separator",
+              "margin": "md"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "margin": "lg",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "時間",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 1
+                    },
+                    {
+                      "type": "text",
+                      "text": "110/10/30 (六) 10:00 - 12:00",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "地點",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 1
+                    },
+                    {
+                      "type": "text",
+                      "text": "瑞光社宅 3F 空中廣場",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "提醒",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 1
+                    },
+                    {
+                      "type": "text",
+                      "text": "1.由戶外 1F 階梯進入\n2.行動不便者請洽物管人員\n3.點擊圖片可以看到更多資訊",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "sm",
+          "contents": [
+            {
+              "type": "button",
+              "style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "查看闖關集點",
+                "text": "查看部落集點卡"
+              }
+            },
+            {
+              "type": "button",
+              "style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "掃描闖關 QR Code",
+                "text": "這邊要開 LIFF"
+              }
+            }
+          ],
+          "flex": 0
+        }
+      }
+    ]
+  }
