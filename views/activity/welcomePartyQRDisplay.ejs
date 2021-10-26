@@ -1,0 +1,25 @@
+<%- include('../component/header', {title: title, cssList: cssList}); %>
+<body>
+    <div class="h-100 container-fluid">
+        <div class="row h-100 align-items-center">
+            <div class="d-flex justify-content-center">
+                <h1>我的闖關 QR Code</h1>
+            </div>
+            <div id="pac-man-home" class="d-flex justify-content-center">
+                <div id="pac-man"></div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <canvas id="qrcode" class="align-self-center"></canvas>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button id="closeBtn" type="button" class="btn btn-primary btn-lg">關閉視窗</button>
+            </div>
+        </div>
+    </div>
+    <%- include('../component/bodyTailJSLoader.ejs', {jsList: jsList}); %>
+    <script>
+        window.onload = () => {
+            app.init();
+        }
+    </script>
+</body>

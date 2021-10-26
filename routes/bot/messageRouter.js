@@ -1,5 +1,6 @@
 const { router, text } = require('bottender/router');
 const activityFlex = require('../../template/message/11010_activity_flex.json');
+const getPointCard = require('../../service/pointcard');
 
 module.exports = async function messageRouter(context) {
     return router([
@@ -8,6 +9,7 @@ module.exports = async function messageRouter(context) {
         text('周邊生活', (context)=>{ context.sendText('周邊生活'); }),
         text('瑞光社群', (context)=>{ context.sendText('瑞光社群'); }),
         text('活動專區', (context)=>{ context.replyFlex("請使用手機查看訊息", activityFlex); }),
+        text('我的闖關卡', getPointCard ),
         text('*', (context)=>{ context.sendText('我不曉得您的意思，如果有問題可以私訊我們的臉書專頁 https://fb.ruiguang.link'); })
     ]);
 }

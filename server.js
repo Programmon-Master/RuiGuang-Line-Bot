@@ -6,7 +6,8 @@ const logger = require('morgan');
 const { bottender } = require('bottender');
 const mongoose = require('mongoose');
 
-const mainRouter = require('./routes/api/controller/mainRouter');
+const mainRouter = require('./routes/api/mainRouter');
+const liffRouter = require('./routes/liff/liffRouter');
 
 const app = bottender({
     dev: process.env.NODE_ENV !== 'production',
@@ -71,7 +72,7 @@ app.prepare().then(() => {
     server.use(express.static(path.join(__dirname, 'public')));
 
     server.use('/api', mainRouter);
-
+    server.use('/liff', liffRouter);
     server.use('/webhooks', handle);
 
     // Catch 404 and forward to error handler

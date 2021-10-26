@@ -6,7 +6,7 @@
         "size": "kilo",
         "hero": {
           "type": "image",
-          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip10.jpg",
+          "url": "https://i.imgur.com/eJNLZzf.jpg",
           "size": "full",
           "aspectMode": "cover",
           "aspectRatio": "320:213",
@@ -128,8 +128,8 @@
               "height": "sm",
               "action": {
                 "type": "message",
-                "label": "查看闖關集點",
-                "text": "查看部落集點卡"
+                "label": "我的闖關卡",
+                "text": "我的闖關卡"
               }
             },
             {
@@ -138,7 +138,7 @@
               "height": "sm",
               "action": {
                 "type": "message",
-                "label": "掃描闖關 QR Code",
+                "label": "顯示集點 QR Code",
                 "text": "這邊要開 LIFF"
               }
             }
