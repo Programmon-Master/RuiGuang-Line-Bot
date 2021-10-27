@@ -1,6 +1,6 @@
 const app = (() => {
 
-    const liffID = '1656454740-7kk6amy4';
+    const liffID = '1656454740-rYp59Eod';
     let pageWidth = undefined;
     let qrcode = undefined;
 
@@ -13,6 +13,7 @@ const app = (() => {
         qrcode = new QRious({
             element: document.querySelector('canvas'),
             size: pageWidth * 0.5,
+            backgroundAlpha: 0,
             value: userId
         });
     }
@@ -24,6 +25,7 @@ const app = (() => {
                 rs(profile.userId);
             })
             .catch((err) => {
+                err.customMsg = "取得使用者 ID 發生錯誤，請檢查是否同意存取權限"
                 rj(err)
             });
         })
@@ -34,9 +36,11 @@ const app = (() => {
             liff.init({
                 liffId: liffID
             }).then(() => {
+                if (liff.getOS() == "web") throw new Error();
                 rs();
-            }).catch((error) => {
-                rj(error);
+            }).catch((err) => {
+                err.customMsg = "LIFF 初始化失敗，請確認使用 LINE 開啟本服務"
+                rj(err);
             });
         });
     }
@@ -66,7 +70,8 @@ const app = (() => {
             return createQRCode(userId);
         })
         .catch((err) => {
-            alert(err);
+            if (!err.customMsg) err.customMsg = "發生未知錯誤：" + err;
+            alert("顯示功能異常，請洽兌獎處資訊服務人員協助。錯誤訊息：" + err.customMsg);
         })
     }
 

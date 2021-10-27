@@ -1,8 +1,22 @@
+@font-face {
+    font-family: NotoSansTC-Regular;
+    src: url(/fonts/NotoSansTC-Regular.otf) format("opentype");
+}
+
 body {
-    background-image: url('/images/welcomeParty/background.jpg');
+    background-image: url('/images/welcomeParty/qrcode_bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+h1, p, span, #closeBtn {
+    font-family: NotoSansTC-Regular;
+}
+
+#closeBtn {
+    color: #FFFFFF;
+    background: #5594A7;
 }
 
 #pac-man {
