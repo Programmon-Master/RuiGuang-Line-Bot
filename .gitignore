@@ -122,3 +122,6 @@ dist
 
 # MongoDB Data
 infrastructure/environment/mongodb/data/*
+
+# Custom point card image
+public/images/welcomeparty_pointcard/users/*
