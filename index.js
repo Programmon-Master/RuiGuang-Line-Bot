@@ -10,10 +10,10 @@ async function App(context) {
 };
 
 async function HandlePostback(context) {
-    console.log(context);
+
 }
 async function HandleLine(context) {
-    console.log(context);
+
 }
 
 module.exports = App;
