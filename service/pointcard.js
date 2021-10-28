@@ -1,13 +1,11 @@
 const sharp = require('sharp');
-const fs = require('fs');
 const { UserActivityHistory } = require('../model/activity/UserActivityHistory');
 
 const baseUrl = process.env.BASE_URL;
-
-const PICBDIR = process.cwd() + '/images/welcomeparty_pointcard/';
-const LOCALPICBDIR = process.cwd() + '/public/images/welcomeparty_pointcard/';
-const rawPointcard = process.cwd() + '/public/images/welcomeparty_pointcard/pointcard.png';
+const PICBDIR = 'public/images/welcomeparty_pointcard/';
+const rawPointcard = PICBDIR + 'pointcard.png';
 const actName = '瑞光島登島慶典：冒險啟程';
+
 const stamp = {
   '法律圈圈部落': {
     stamp: PICBDIR + 'stamp_law.png',
@@ -25,7 +23,7 @@ const stamp = {
     stamp: PICBDIR + 'stamp_outdoor.png',
     coord: [93, 178]
   },
-  '文創響響部落': {
+  '文創饗饗部落': {
     stamp: PICBDIR + 'stamp_creative.png',
     coord: [44, 81]
   },
@@ -96,11 +94,9 @@ module.exports = async function getPointCard(context) {
     UserActivityHistory.findOne({ uid: uid }, function (err, userActivity) {
       if(err) { ErrorLogger('Query uid error, '+err, 400); return; }
 
-      const output = LOCALPICBDIR + `users/${ uid }.png`;
-      const url = output.replace(process.cwd(), '').split('/').slice(1).join('/');
+      const output = PICBDIR + `users/${ uid }.png`;
+      const url = output.split('/').slice(1).join('/');
 
-      console.log(url);
-      console.log((baseUrl + url).replace('public/', ''));
       if(!userActivity) {
         // create user and activity (async)
         UserActivityHistory.create(newUser, function (err, userActivity) {
@@ -114,16 +110,16 @@ module.exports = async function getPointCard(context) {
               if(err) { ErrorLogger('Create pointcard error, '+err, 400); return; }
               // send image
               context.sendImage({
-                originalContentUrl: (baseUrl + url).replace('public', ''),
-                previewImageUrl: (baseUrl + url).replace('public', ''),
+                originalContentUrl: (baseUrl + url),
+                previewImageUrl: (baseUrl + url),
               });
             });
         });
       } else {
         // send image
         context.sendImage({
-            originalContentUrl: (baseUrl + url).replace('public', ''),
-            previewImageUrl: (baseUrl + url).replace('public', ''),
+            originalContentUrl: (baseUrl + url),
+            previewImageUrl: (baseUrl + url),
         });
       }
     });
