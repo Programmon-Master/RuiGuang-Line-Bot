@@ -7,6 +7,7 @@ const { bottender } = require('bottender');
 const mongoose = require('mongoose');
 
 const mainRouter = require('./routes/api/mainRouter');
+const webRouter = require('./routes/web/webRouter');
 const liffRouter = require('./routes/liff/liffRouter');
 
 const app = bottender({
@@ -72,6 +73,7 @@ app.prepare().then(() => {
     server.use(express.static(path.join(__dirname, 'public')));
 
     server.use('/api', mainRouter);
+    server.use('/web', webRouter);
     server.use('/liff', liffRouter);
     server.use('/webhooks', handle);
 

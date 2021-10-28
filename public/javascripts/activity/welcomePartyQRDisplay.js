@@ -1,6 +1,6 @@
 const app = (() => {
 
-    const liffID = '1656454740-rYp59Eod';
+    const liffID = '1656454740-KZEXPYwl';
     let pageWidth = undefined;
     let qrcode = undefined;
 

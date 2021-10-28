@@ -137,9 +137,9 @@
               "style": "link",
               "height": "sm",
               "action": {
-                "type": "message",
+                "type": "uri",
                 "label": "顯示集點 QR Code",
-                "text": "這邊要開 LIFF"
+                "uri": "https://liff.line.me/1656454740-KZEXPYwl"
               }
             }
           ],

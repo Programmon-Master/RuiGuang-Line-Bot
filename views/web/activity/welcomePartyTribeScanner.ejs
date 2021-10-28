@@ -1,0 +1,45 @@
+<%- include('../../component/header', {title: title, cssList: cssList}); %>
+<body>
+    <div class="h-100 container-fluid">
+        <div class="row h-100 align-items-center">
+            <div class="col-8 col-md-6 d-flex flex-column justify-content-center align-self-center">
+                <select id="tribeName" class="form-select form-select mb-3" aria-label=".form-select">
+                    <option selected>醫療嗡嗡部落</option>
+                    <option>運動動茲部落</option>
+                    <option>法律圈圈部落</option>
+                    <option>文創饗饗部落</option>
+                    <option>花園水水部落</option>
+                    <option>凹豆球球部落</option>
+                    <option>兌獎部落</option>
+                </select>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">請輸入密碼</label>
+                    <div class="col-sm-10">
+                    <input id="inputPassword" type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button id="submit" type="submit" class="btn btn-primary">送出</button>
+                </div>
+            </div>
+            <div id="loadingMessage" class="d-flex justify-content-center font-monospace">
+                ⛺️ 請先選擇部落名稱，🔑 接著輸入密碼，按下送出後即可開始掃描
+            </div>
+            <div class="d-flex justify-content-center">
+                <canvas id="canvas" hidden></canvas>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="output" hidden>
+                    <div id="outputMessage" class="font-monospace">尚未偵測到 QR Code</div>
+                    <div  class="alert alert-primary" role="alert" hidden><b class="font-monospace">已偵測到 QR Code 資訊：</b> <span id="outputData" class="font-monospace"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('../../component/bodyTailJSLoader.ejs', {jsList: jsList}); %>
+    <script>
+        window.onload = () => {
+            app.init();
+        }
+    </script>
+</body>

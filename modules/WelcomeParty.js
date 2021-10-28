@@ -196,7 +196,7 @@ module.exports = class WelcomeParty {
           sharp.cache(false);
           sharp(rawPointcard)
             .toFile(output, (err, info) => {
-              if(err) { ErrorLogger('Create pointcard error, '+err, 400, res); return; }     
+              if(err) { ErrorLogger('Create pointcard error, '+err, 400, res); return; }
               res.status(200).send({msg: 'success!!', url: url});
             });
         });
@@ -222,8 +222,16 @@ module.exports = class WelcomeParty {
       if(act.length !== 1) { ErrorLogger('Multiple same activity', 400, res); return; }
 
       const point = act[0].pointcard.cardField.filter(card => card.value===true);
-      if(point.length !== 6) { ErrorLogger('Do not collect 6 stamp!!', 400, res); return; }
-      if(act[0].pointcard.status === 1) { ErrorLogger('Already drawed!!', 400, res); return; }
+      if(point.length !== 6) {
+        client.pushText(uid, "🛶 您還沒完成六大部落闖關！");
+        ErrorLogger('尚未完成六大部落闖關', 400, res);
+        return;
+      }
+      if(act[0].pointcard.status === 1) { 
+        client.pushText(uid, "🏆 您已經兌換過獎品囉！");
+        ErrorLogger('已經兌換過獎品', 400, res);
+        return; 
+      }
 
       act[0].pointcard.status = true;
       result.save().then(savedDoc => {
