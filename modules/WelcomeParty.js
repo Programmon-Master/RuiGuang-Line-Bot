@@ -1,10 +1,13 @@
 const sharp = require('sharp');
 const fs = require('fs');
 const { UserActivityHistory } = require('../model/activity/UserActivityHistory');
+const { getClient } = require('bottender');
+const client = getClient('line');
 
 const PICBDIR = 'public/images/welcomeparty_pointcard/';
 const rawPointcard = PICBDIR + 'pointcard.png';
 const actName = '瑞光島登島慶典：冒險啟程';
+
 const stamp = {
   '法律圈圈部落': {
     stamp: PICBDIR + 'stamp_law.png',
@@ -22,7 +25,7 @@ const stamp = {
     stamp: PICBDIR + 'stamp_outdoor.png',
     coord: [93, 178]
   },
-  '文創響響部落': {
+  '文創饗饗部落': {
     stamp: PICBDIR + 'stamp_creative.png',
     coord: [44, 81]
   },
@@ -114,6 +117,10 @@ module.exports = class WelcomeParty {
           if(err) { ErrorLogger('Rename file error, '+err, 400, res); return; }
 
           console.log('Stamped!!')
+          client.pushImage(url.match(/[\w-]+?(?=\.)/)[0],{
+            originalContentUrl: process.env.BASE_URL + url,
+            previewImageUrl: process.env.BASE_URL + url,
+          });
           res.status(200).send({msg: 'success!!', url: url});
         });
       });
