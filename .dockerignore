@@ -1,0 +1,8 @@
+.DS_Store
+
+node_modules
+npm-debug.log
+
+.git*
+
+public/images/welcomeparty_pointcard/users/*
