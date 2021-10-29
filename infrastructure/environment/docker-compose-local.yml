@@ -25,7 +25,7 @@ volumes:
 
 services:
   mongo:
-    image: mongo:5.0.3-focal
+    image: mongo:4.4.10-focal
     ports:
       - 27017:27017
     secrets:
