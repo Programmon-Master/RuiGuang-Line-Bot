@@ -17,11 +17,11 @@
                 <canvas id="qrcode" class="align-self-center"></canvas>
             </div>
             <div class="d-flex justify-content-center">
-                <button id="closeBtn" type="button" class="btn btn-lg">關閉視窗</button>
+                <button id="closeBtn" type="button" class="btn btn-lg">蓋章完成</button>
             </div>
         </div>
     </div>
-    <%- include('../../component/bodyTailJSLoader.ejs', {jsList: jsList}); %>
+    <%- include('../../component/bodyTailJSloader', {jsList: jsList}); %>
     <script>
         window.onload = () => {
             app.init();

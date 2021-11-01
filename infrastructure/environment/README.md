@@ -4,6 +4,10 @@
 
 為使專案順利運作，執行環境分為本地開發環境 (docker-compose-local) 及伺服器執行環境 (docker-compose-deploy)，並基於安全起見，將帳號密碼等敏感資訊以 Docker Secret 進行讀取。
 
+## Host
+
+目前服務架設在 Synology DS920+ / 8T Raid 5 + 250 GB SSD Cache / DDR4 2666 4GB + 3200 16GB RAM 主機上，惟該環境具有[漏洞](https://community.synology.com/enu/forum/1/post/130729)使 Docker Swarm 無法正確載入 Compose File 的環境參數，因此使用 docker-compose-deploy 進行部署，也因此未來將導入 CI/CD 的方式並用 docker-compose 進行佈署。
+
 ## Service
 
 ### Mongo DB

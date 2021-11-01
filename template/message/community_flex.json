@@ -1,0 +1,152 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/LZq4dAS.png",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "青創｜ Facebook",
+            "size": "xl",
+            "weight": "bold"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "從運動、出遊、園藝，到資訊、法律、照護、手作，多元豐富的活動等你來參加。快來按讚粉絲團，不錯過任何活動資訊！",
+                "size": "sm",
+                "wrap": true,
+                "margin": "xl"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "立即前往按讚",
+              "uri": "https://fb.ruiguang.link/"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/LZq4dAS.png",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "青創｜Youtube",
+            "size": "xl",
+            "weight": "bold"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "嶄新的活動總是讓人興奮，美好的回憶值得細細品嘗。趕快來關注有沒有最新的影片吧，記得訂閱哦！",
+                "size": "sm",
+                "wrap": true,
+                "margin": "xl"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "立即前往訂閱",
+              "uri": "https://yt.ruiguang.link/"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/LZq4dAS.png",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "青創｜ Line 社群",
+            "size": "xl",
+            "weight": "bold"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "瑞光最大聊天社群上線啦～不管是生活煩惱、想揪團購還是缺人聊天通通有解，趕快加入我們吧！",
+                "size": "sm",
+                "wrap": true,
+                "margin": "xl"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "立即加入社群",
+              "uri": "https://line.ruiguang.link/"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

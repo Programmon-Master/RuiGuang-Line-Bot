@@ -1,0 +1,73 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://i.imgur.com/feHvNC3.jpg",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "青創團隊",
+        "weight": "bold",
+        "size": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "lg",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "由都發局主辦的「社會住宅青年創新回饋計畫」，從上百組提案中遴選出27組青創種子進入社區，旨在透過舉辦豐富活動和進行多元服務，形塑社區特色，建立友善樂居的居住環境。",
+                "wrap": true,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 10
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "message",
+          "text": "青創介紹",
+          "label": "青創介紹"
+        }
+      },
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "message",
+          "label": "最近有什麼活動",
+          "text": "活動專區"
+        }
+      }
+    ],
+    "flex": 0
+  }
+}

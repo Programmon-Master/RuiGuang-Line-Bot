@@ -1,0 +1,43 @@
+version: '3.4'
+
+volumes:
+  mongodb:
+  imgStore:
+
+services:
+  mongo:
+    image: mongo:4.4.10-focal
+    environment:
+      MONGO_INITDB_DATABASE: ''
+      MONGO_INITDB_ROOT_USERNAME: ''
+      MONGO_INITDB_ROOT_PASSWORD: ''
+      MONGO_DATABASE: ''
+      MONGO_USERNAME: ''
+      MONGO_PASSWORD: ''
+    volumes:
+      - mongodb:/data/db
+      - ./mongodb/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh
+
+  mongo-express:
+    image: mongo-express:0.54.0
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_MONGODB_PORT: 27017
+      ME_CONFIG_OPTIONS_EDITORTHEME: mbo
+      ME_CONFIG_BASICAUTH_USERNAME: ''
+      ME_CONFIG_BASICAUTH_PASSWORD: ''
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: ''
+      ME_CONFIG_MONGODB_AUTH_DATABASE: ''
+      ME_CONFIG_MONGODB_AUTH_USERNAME: ''
+      ME_CONFIG_MONGODB_AUTH_PASSWORD: ''
+      ME_CONFIG_SITE_COOKIESECRET: ''
+      ME_CONFIG_SITE_SESSIONSECRET: ''
+
+  linebot:
+    image: minecola/rgbot
+    ports:
+      - 6650:5000
+    volumes:
+      - imgStore:/usr/src/app/public/images/welcomeparty_pointcard/users
