@@ -192,7 +192,7 @@
             "action": {
                 "type": "uri",
                 "label": "action",
-                "uri": "https://www.facebook.com/RuiGuangIsland"
+                "uri": "https://www.facebook.com/RuiGuangIsland/posts/148231070861833"
             }
             },
             "body": {
@@ -441,7 +441,7 @@
                         },
                         {
                             "type": "text",
-                            "text": "瑞光社宅 3F 多功能活動空間 B",
+                            "text": "瑞光社宅 3F 多功能活動空間 A",
                             "wrap": true,
                             "color": "#666666",
                             "size": "sm",
@@ -971,6 +971,140 @@
                 }
                 ],
                 "flex": 0
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "kilo",
+            "hero": {
+                "type": "image",
+                "url": "https://i.imgur.com/y8cQM7Q.png",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                {
+                    "type": "text",
+                    "text": "基礎瑜珈課(8堂課)",
+                    "weight": "bold",
+                    "size": "xl"
+                },
+                {
+                    "type": "separator",
+                    "margin": "md"
+                },
+                {
+                    "type": "text",
+                    "text": "特聘請YOGA RYT 200HR TTC 美國瑜珈聯盟師資認證老師－Fish吳佳俞老師，帶領大家將基礎的瑜珈體式構成拆解成每週主題式的練習，從根基開始建構並覺察自己的身體和內心。\n每堂為不同主題,如想單堂體驗也可報名,但期班能較完整的建立觀念與基礎。\n💭 課程大綱(會再依現場狀況調整):\n11/11-前彎\n11/18-站姿/平衡\n11/25-髖穩定\n12/2-肩胛穩定\n12/9-後彎\n12/16-肩頸紓緩\n12/23-扭轉\n12/30-下肢舒展",
+                    "wrap": true,
+                    "size": "sm",
+                    "margin": "lg"
+                },
+                {
+                    "type": "separator",
+                    "margin": "md"
+                },
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "margin": "lg",
+                    "spacing": "sm",
+                    "contents": [
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "時間",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "110/11/11 起每週四 19:30 -20:30",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "地點",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "瑞光社宅 3F 多功能活動空間 B-1",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "費用",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "單堂體驗價：$400/堂\n社宅期班推廣價：$300/堂*8堂=$2,400元\n非住戶期班費用350*8堂=$2800",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "提醒",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "1. 此場地須自備瑜珈墊、瑜珈磚、長毛巾、水\n❗️本課程已經額滿❗️",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
             }
         }
     ]
