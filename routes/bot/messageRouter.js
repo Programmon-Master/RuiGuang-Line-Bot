@@ -1,6 +1,6 @@
 const { Line } = require('messaging-api-line');
 const { router, text } = require('bottender/router');
-const activityFlex = require('../../template/message/11010_activity_flex.json');
+const activityFlex = require('../../template/message/11011_activity_flex.json');
 const aboutUsFlex = require('../../template/message/aboutUs_flex.json');
 const communityFlex = require('../../template/message/community_flex.json');
 const underConstruction = require('../../template/message/underConstruction_flex.json');

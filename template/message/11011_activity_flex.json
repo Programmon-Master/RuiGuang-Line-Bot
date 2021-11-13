@@ -1,0 +1,977 @@
+{
+    "type": "carousel",
+    "contents": [
+        {
+        "type": "bubble",
+        "size": "kilo",
+        "hero": {
+            "type": "image",
+            "url": "https://i.imgur.com/tKDCjH4.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "320:213",
+            "action": {
+            "type": "uri",
+            "label": "action",
+            "uri": "https://www.facebook.com/RuiGuangIsland/posts/148092604209013"
+            }
+        },
+        "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+            {
+                "type": "text",
+                "text": "阿公的茶桌",
+                "weight": "bold",
+                "size": "xl"
+            },
+            {
+                "type": "separator",
+                "margin": "md"
+            },
+            {
+                "type": "text",
+                "text": "青創行動博物館 x 鶯歌陶瓷博物館\n展示導覽 ＋ DIY手捏陶碟活動\n\n這次特地邀請到「鶯歌陶瓷博物館」走入社區，將行動展覽引進社區，展示陶瓷文化之美；並搭配DIY陶藝創作活動，讓大家親手體驗陶瓷生成的奧妙！\n\n這是一個拓展文化藝術視野、又能動手做的活動，歡迎大小孩都來玩！",
+                "wrap": true,
+                "size": "sm",
+                "margin": "lg"
+            },
+            {
+                "type": "separator",
+                "margin": "md"
+            },
+            {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                    {
+                        "type": "text",
+                        "text": "時間",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                    },
+                    {
+                        "type": "text",
+                        "text": "110/12/11 (六) 10:00 - 12:00",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                    }
+                    ]
+                },
+                {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                    {
+                        "type": "text",
+                        "text": "地點",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                    },
+                    {
+                        "type": "text",
+                        "text": "瑞光社宅 3F 多功能活動空間 B",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                    }
+                    ]
+                },
+                {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                    {
+                        "type": "text",
+                        "text": "費用",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                    },
+                    {
+                        "type": "text",
+                        "text": "150元 / 人 ，需事先匯款",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                    }
+                    ]
+                },
+                {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                    {
+                        "type": "text",
+                        "text": "對象",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                    },
+                    {
+                        "type": "text",
+                        "text": "無年齡限制，12歲以下孩童/身心障礙者可有一名親友陪同",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                    }
+                    ]
+                },
+                {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                    {
+                        "type": "text",
+                        "text": "提醒",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                    },
+                    {
+                        "type": "text",
+                        "text": "1. 請自備圍裙或穿不怕髒的衣物\n2. 請自備抹布或濕紙巾\n3. 如果自己有喜歡的圖案、印章，或慣用的雕塑工具也可以帶來使用\n4. 限量名額20位，事先匯款完成才算報名成功",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        },
+        "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+            {
+                "type": "button",
+                "style": "link",
+                "height": "sm",
+                "action": {
+                "type": "uri",
+                "label": "立即報名",
+                "uri": "https://forms.gle/j22x1wuqMGxADL4k6"
+                }
+            }
+            ],
+            "flex": 0
+        }
+        },
+        {
+            "type": "bubble",
+            "size": "kilo",
+            "hero": {
+            "type": "image",
+            "url": "https://i.imgur.com/3m800nx.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "320:213",
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.facebook.com/RuiGuangIsland"
+            }
+            },
+            "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                "type": "text",
+                "text": "程式遊戲體驗課程",
+                "weight": "bold",
+                "size": "xl"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "text",
+                "text": "瑞光好資在 x Scratch\n\nScratch 是一款以簡易邏輯、圖形化方式激起創意的軟體，可以做的不限於遊戲、簡報及動畫...十分好上手！\n\n青創—瑞光好資在團隊成員過去有許多相關的 Scratch 教學經驗✏️，嘗試以體驗營的方式帶入社區，希望可以助於社宅內、社區內有興趣的人能夠嘗試、培養邏輯並且揮灑創意🎉",
+                "wrap": true,
+                "size": "sm",
+                "margin": "lg"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "時間",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "110/11/28 (日) 9:00 - 12:00",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    },
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "地點",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "瑞光社宅 3F 多功能活動空間 A",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "費用",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "免費",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "對象",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 1
+                            },
+                            {
+                                "type": "text",
+                                "text": "國小四年級以上",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                            }
+                        ]
+                    },
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "提醒",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "1. 筆記型電腦一台（記得帶充電器）\n2. 睡飽的自己\n3. 滿到溢出來的創意\n4. 可以事先安裝好 Scratch，但當天也會教大家安裝哦！\n5. 活動報名上限15名",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    }
+                ]
+                }
+            ]
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                {
+                    "type": "button",
+                    "style": "link",
+                    "height": "sm",
+                    "action": {
+                    "type": "uri",
+                    "label": "立即報名",
+                    "uri": "https://forms.gle/XSWB5wLhDZHzV2pm9"
+                    }
+                }
+                ],
+                "flex": 0
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "kilo",
+            "hero": {
+                "type": "image",
+                "url": "https://i.imgur.com/kBcVY66.jpg",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213",
+                "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.facebook.com/RuiGuangIsland/posts/147917724226501"
+                }
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                {
+                    "type": "text",
+                    "text": "舊衣再利用 編織手作課",
+                    "weight": "bold",
+                    "size": "xl"
+                },
+                {
+                    "type": "separator",
+                    "margin": "md"
+                },
+                {
+                    "type": "text",
+                    "text": "領口鬆掉不合身的 T-shirt👕 只能變成垃圾嗎？\n\n結合波西米亞風格的編織 Macrame ，延長舊衣壽命，擺脫只能被拋棄的命運吧！\n\n\n一起來參加 Fino & Sasa 的手作編織課，把舊 T-shirt 變身成可愛的鑰匙圈吧！✨",
+                    "wrap": true,
+                    "size": "sm",
+                    "margin": "lg"
+                },
+                {
+                    "type": "separator",
+                    "margin": "md"
+                },
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "margin": "lg",
+                    "spacing": "sm",
+                    "contents": [
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "時間",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "110/11/27 (六) 14:00 - 16:00",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "地點",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "瑞光社宅 3F 多功能活動空間 B",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "費用",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "100元 / 人 ，需事先匯款",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "對象",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "12歲以上",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "提醒",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "1. 請自備不穿的舊 T-Shirt\n2. 活動報名上限10名\n3. 事先匯款完成才算報名成功",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                {
+                    "type": "button",
+                    "style": "link",
+                    "height": "sm",
+                    "action": {
+                    "type": "uri",
+                    "label": "立即報名",
+                    "uri": "https://forms.gle/A6uRugjkx63AfE5W9"
+                    }
+                }
+                ],
+                "flex": 0
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "kilo",
+            "hero": {
+            "type": "image",
+            "url": "https://i.imgur.com/LLO7kOg.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "320:213",
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.facebook.com/RuiGuangIsland/posts/148091204209153"
+            }
+            },
+            "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                "type": "text",
+                "text": "基礎街舞教學",
+                "weight": "bold",
+                "size": "xl"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "text",
+                "text": "青創舞動瑞光計劃 x 基礎街舞教學\n\n想運動流汗瘦身的時候到了，想嘗試進入街舞的世界嗎\n\n你可以學到\n✦ 舞蹈律動基礎，暖身、Step練習\n✦ 開發肢體協調\n✦ 學會一套簡單的基礎排舞 \n✦ 課後拍影片自主練習\n📌此課程適合入門初學者",
+                "wrap": true,
+                "size": "sm",
+                "margin": "lg"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "時間",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "110/11/23 (二) 19:30 - 20:30",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    },
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "地點",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "瑞光社宅 3F 多功能活動空間 B-1",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "費用",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "免費",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "提醒",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "1. 現場報名\n2. 人數上限20人",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    }
+                ]
+                }
+            ]
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "kilo",
+            "hero": {
+            "type": "image",
+            "url": "https://i.imgur.com/4tiMAxJ.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "320:213",
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.facebook.com/RuiGuangIsland/posts/147193850965555"
+            }
+            },
+            "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                "type": "text",
+                "text": "免費法律諮詢",
+                "weight": "bold",
+                "size": "xl"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "text",
+                "text": "瑞光社宅法律服務團隊，將在社宅舉辦法律諮詢服務。\n如果您有生活上的法律問題，歡迎攜帶您的資料前來，由專業的律師在現場為您服務！\n\n不要錯過囉～",
+                "wrap": true,
+                "size": "sm",
+                "margin": "lg"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "時間",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "110/11/14 (日) 9:30 - 11:30",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    },
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "地點",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "瑞光社宅 3F 多功能活動空間 C",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "費用",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "免費",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "提醒",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "1. 現場報名\n2. 人數上限6~8人(開放諮詢至11:30為止)",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    }
+                ]
+                }
+            ]
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "kilo",
+            "hero": {
+                "type": "image",
+                "url": "https://i.imgur.com/P2gX5pN.jpg",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213",
+                "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.facebook.com/RuiGuangIsland/posts/147215820963358"
+                }
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                {
+                    "type": "text",
+                    "text": "觀展活動預告 & 免費展覽",
+                    "weight": "bold",
+                    "size": "xl"
+                },
+                {
+                    "type": "separator",
+                    "margin": "md"
+                },
+                {
+                    "type": "text",
+                    "text": "未來青創夥伴Anny會舉辦逛內湖藝廊展覽的活動，都是免費觀展噢～\n之後的展覽活動將會陸續公布！\n\n未來正式活動有參加活動的島民們，\nAnny會在展場內幫您拍網美/網帥or家庭照📷\n\n敬請期待之後的展覽活動\n\n📍本次分享免費展覽：安之若素",
+                    "wrap": true,
+                    "size": "sm",
+                    "margin": "lg"
+                },
+                {
+                    "type": "separator",
+                    "margin": "md"
+                },
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "margin": "lg",
+                    "spacing": "sm",
+                    "contents": [
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "時間",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "即日起至 110/11/13 (六) 11:00 - 19:00",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "地點",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "耿畫廊 Tina Keng Gallery(瑞光路548巷15號1樓)",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "費用",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "免費",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "提醒",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "1. 週日、週一公休",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                {
+                    "type": "button",
+                    "style": "link",
+                    "height": "sm",
+                    "action": {
+                    "type": "uri",
+                    "label": "耿畫廊 Tina Keng Gallery",
+                    "uri": "https://www.facebook.com/tinakenggallery/"
+                    }
+                }
+                ],
+                "flex": 0
+            }
+        }
+    ]
+}
