@@ -651,6 +651,28 @@
                         ]
                     },
                     {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "對象",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "無年齡限制（五歲以下需有家長陪同）",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
                     "type": "box",
                     "layout": "baseline",
                     "spacing": "sm",
@@ -664,7 +686,7 @@
                         },
                         {
                         "type": "text",
-                        "text": "1. 現場報名\n2. 人數上限20人",
+                        "text": "1. 現場報名或加入Line群預先報名\n2. 人數上限20人\n3. 若預先報名已滿則不開放現場報名",
                         "wrap": true,
                         "color": "#666666",
                         "size": "sm",
@@ -675,6 +697,24 @@
                 ]
                 }
             ]
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                {
+                    "type": "button",
+                    "style": "link",
+                    "height": "sm",
+                    "action": {
+                    "type": "uri",
+                    "label": "加入街舞群組提前預約",
+                    "uri": "http://line.me/ti/g/E-Ltt9Lp55"
+                    }
+                }
+                ],
+                "flex": 0
             }
         },
         {
