@@ -142,6 +142,29 @@
                     "contents": [
                     {
                         "type": "text",
+                        "text": "前往\n方式",
+                        "wrap": true,
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                    },
+                    {
+                        "type": "text",
+                        "text": "1. 由物管協助搭電梯至3樓\n2. 靠近管理室的A電梯旁有逃生樓梯，打開逃生門走上3樓\n3. 從廣場前往3樓",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                    }
+                    ]
+                },
+                {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                    {
+                        "type": "text",
                         "text": "提醒",
                         "color": "#aaaaaa",
                         "size": "sm",
@@ -179,6 +202,187 @@
             ],
             "flex": 0
         }
+        },
+        {
+            "type": "bubble",
+            "size": "kilo",
+            "hero": {
+            "type": "image",
+            "url": "https://i.imgur.com/Vp0vfAx.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "320:213",
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.facebook.com/RuiGuangIsland/posts/149415940743346"
+            }
+            },
+            "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                "type": "text",
+                "text": "內湖淨山 x 圓覺寺步道",
+                "weight": "bold",
+                "size": "xl"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "text",
+                "text": "⛰️內湖淨山｜訪古淨山樂縱走 沿途垃圾帶著走\n\n🌟內湖淨山 x 圓覺寺步道\n\n瑞光社宅座落於好山好水的內湖區\n青創團隊要來帶著大家走向戶外，認識內湖，探索這塊被群山包圍的寶地\n\n在綠意盎然的步道間，一起動身健行，一起動手整理環境，休閒踏青也不能忘記一起守護山林環境🎉\n\n✨活動方會準備垃圾夾數支、垃圾袋，手套，讓我們一起沿路垃圾帶著走！",
+                "wrap": true,
+                "size": "sm",
+                "margin": "lg"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "時間",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "110/11/28 (日) 9:30 - 12:00",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                            {
+                            "type": "text",
+                            "text": "集合\n地點",
+                            "wrap": true,
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                            },
+                            {
+                            "type": "text",
+                            "text": "大湖公園捷運站 1 號出口",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                            {
+                            "type": "text",
+                            "text": "活動\n路線",
+                            "wrap": true,
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                            },
+                            {
+                            "type": "text",
+                            "text": "大湖公園捷運站 - 大溝溪園區 - 圓覺瀑布",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "費用",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "免費",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "提醒",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "1. 人數上限20人(依表單報名順序)\n2. 本次行程簡單，適合一般民眾參加\n3. 活動當天請穿著輕鬆、方便活動為主。\n4. 活動預計中午12:00結束，於大湖公園1號出口解散\n5. 請自行攜帶水、小糧食於路途中，若有自用藥品也請帶上\n6. 請攜帶雨具，若為毛毛雨，活動仍會持續進行",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    }
+                ]
+                }
+            ]
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                {
+                    "type": "button",
+                    "style": "link",
+                    "height": "sm",
+                    "action": {
+                    "type": "uri",
+                    "label": "立即報名",
+                    "uri": "https://forms.gle/XSWB5wLhDZHzV2pm9"
+                    }
+                }
+                ],
+                "flex": 0
+            }
         },
         {
             "type": "bubble",
@@ -315,6 +519,29 @@
                         ]
                     },
                     {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "前往\n方式",
+                            "wrap": true,
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "1. 由物管協助搭電梯至3樓\n2. 靠近管理室的A電梯旁有逃生樓梯，打開逃生門走上3樓\n3. 從廣場前往3樓",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
                     "type": "box",
                     "layout": "baseline",
                     "spacing": "sm",
@@ -357,6 +584,190 @@
                 }
                 ],
                 "flex": 0
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "kilo",
+            "hero": {
+            "type": "image",
+            "url": "https://i.imgur.com/FKpI5Ei.png",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "320:213",
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.facebook.com/RuiGuangIsland/posts/149225587429048"
+            }
+            },
+            "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                "type": "text",
+                "text": "疫情大百科、清潔消毒宣導",
+                "weight": "bold",
+                "size": "xl"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "text",
+                "text": "新冠肺炎疫情已蔓延長達兩年，可怕的新冠病毒到底是什麼來頭❓\n就讓前幾線的我們來傳道、授業及解惑吧！\n\n你是不是也對下列問題感到好奇？\n🔸新冠肺炎為什麼可以傳播這麼迅速\n🔹疫情為何影響如此久\n🔸施打疫苗怎麼保護自己同時保護最親近的人\n🔹該如何正確的清潔來保護自己\n\n不用怕！\n我們有專業的醫療人員、藥師及護理師，來解答你的疑惑\n俗話說的好：「知己知彼，百戰百勝」\n告訴你面對這麼強大的病毒，需要具備哪些基本的醫療觀念🧠",
+                "wrap": true,
+                "size": "sm",
+                "margin": "lg"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "時間",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "110/11/27 (六) 10:30 - 11:30",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    },
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "地點",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "瑞光社宅 3F 多功能活動空間 A",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "費用",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "免費",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "對象",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 1
+                            },
+                            {
+                                "type": "text",
+                                "text": "無年齡限制，12歲以下孩童/身心障礙/年長者可有一名親友陪同",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "前往\n方式",
+                            "wrap": true,
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "1. 由物管協助搭電梯至3樓\n2. 靠近管理室的A電梯旁有逃生樓梯，打開逃生門走上3樓\n3. 從廣場前往3樓",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "提醒",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "1. 現場報名，有空歡迎直接參加\n2. 入場時請配合實名登記制並量測體溫酒精清潔手部\n3. 配合防疫政策，室內教學需全程配戴口罩！\n4. 若遇颱風天，依行政院人事行政總處之公告，決定活動是否取消。",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    }
+                ]
+                }
+            ]
             }
         },
         {
@@ -486,6 +897,29 @@
                         {
                             "type": "text",
                             "text": "12歲以上",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "前往\n方式",
+                            "wrap": true,
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "1. 由物管協助搭電梯至3樓\n2. 靠近管理室的A電梯旁有逃生樓梯，打開逃生門走上3樓\n3. 從廣場前往3樓",
                             "wrap": true,
                             "color": "#666666",
                             "size": "sm",
@@ -673,6 +1107,29 @@
                         ]
                     },
                     {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "前往\n方式",
+                            "wrap": true,
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "1. 由物管協助搭電梯至3樓\n2. 靠近管理室的A電梯旁有逃生樓梯，打開逃生門走上3樓\n3. 從廣場前往3樓",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
                     "type": "box",
                     "layout": "baseline",
                     "spacing": "sm",
@@ -715,6 +1172,168 @@
                 }
                 ],
                 "flex": 0
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "kilo",
+            "hero": {
+            "type": "image",
+            "url": "https://i.imgur.com/GoMVU1f.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "320:213",
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.facebook.com/RuiGuangIsland/posts/149252794092994"
+            }
+            },
+            "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                "type": "text",
+                "text": "月偏食來啦🌛",
+                "weight": "bold",
+                "size": "xl"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "text",
+                "text": "青創計畫 x 城市裡的天文學家\n\n月亮大家都有看過，\n那你有看過月亮被地球紅色的影子吃掉嗎？🌚\n瑞光青創的Shawn\n會在13樓戶外農園空間架起大望遠鏡🔭\n帶大家看難得一見的月偏食，\n順便導覽城市可見的亮星！\n\n\n歡迎大家一起來看月食🤓",
+                "wrap": true,
+                "size": "sm",
+                "margin": "lg"
+                },
+                {
+                "type": "separator",
+                "margin": "md"
+                },
+                {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "時間",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "110/11/19 (五) 17:30-19:00",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    },
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "地點",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "瑞光社宅 13F 屋頂農園",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "費用",
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "免費",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "前往\n方式",
+                            "wrap": true,
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "自行搭電梯前往 13F",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                        {
+                        "type": "text",
+                        "text": "提醒",
+                        "color": "#aaaaaa",
+                        "size": "sm",
+                        "flex": 1
+                        },
+                        {
+                        "type": "text",
+                        "text": "1. 觀星活動看天吃飯，如果烏雲密佈只能忍痛取消，還請大家見諒🙏",
+                        "wrap": true,
+                        "color": "#666666",
+                        "size": "sm",
+                        "flex": 5
+                        }
+                    ]
+                    }
+                ]
+                }
+            ]
             }
         },
         {
@@ -822,6 +1441,29 @@
                         {
                             "type": "text",
                             "text": "免費",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "sm",
+                            "flex": 5
+                        }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "前往\n方式",
+                            "wrap": true,
+                            "color": "#aaaaaa",
+                            "size": "sm",
+                            "flex": 1
+                        },
+                        {
+                            "type": "text",
+                            "text": "1. 由物管協助搭電梯至3樓\n2. 靠近管理室的A電梯旁有逃生樓梯，打開逃生門走上3樓\n3. 從廣場前往3樓",
                             "wrap": true,
                             "color": "#666666",
                             "size": "sm",
