@@ -9,17 +9,17 @@
 這次主要結合 Line@ 官方提供的優惠卷功能，可設定中獎率及中獎上限提供給符合條件的使用者，而我們設定的條件很簡單，只要透過 Dashboard[1] 找到雪人並點擊，會觸發聊天室訊息「發現聖誕雪人！」並獲得相關抽獎卷訊息，希望透過這個方式可以吸引更多人加入我們的官方 Line@ 帳號，也希望如果有封鎖的居民可以大發慈悲解鎖一下。
 
 * Dashboard *[1] 再次感謝 @Anita Hsu 協助設計本次節慶介面
-![](/Archive/images/2021-12/xmas_dashboard.jpg)
+<img src="/Archive/images/2021-12/xmas_dashboard.jpg" width="300">
 * 獲得抽獎卷
-![](/Archive/images/2021-12/xmas_lottery.jpg)
+<img src="/Archive/images/2021-12/xmas_lottery.jpg" width="300">
 * 抽獎卷發放時一併提供的活動資訊
-![](/Archive/images/2021-12/xmas_activity_info.jpg)
+<img src="/Archive/images/2021-12/xmas_activity_info.jpg" width="300">
 * 打開抽獎卷的畫面
-![](/Archive/images/2021-12/xmas_lottery_open.PNG)
+<img src="/Archive/images/2021-12/xmas_lottery_open.PNG" width="300">
 * 正在抽獎的畫面
-![](/Archive/images/2021-12/xmas_lottery_start.PNG)
+<img src="/Archive/images/2021-12/xmas_lottery_start.PNG" width="300">
 * 沒有中獎的畫面
-![](/Archive/images/2021-12/xmas_lottery_result.PNG)
+<img src="/Archive/images/2021-12/xmas_lottery_result.PNG" width="300">
 
 ## Mind road
 
