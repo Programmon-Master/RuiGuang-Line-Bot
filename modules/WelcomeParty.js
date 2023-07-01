@@ -244,4 +244,33 @@ module.exports = class WelcomeParty {
             });
         })
     }
+
+    CommemorativeCard() {
+        const uid = this.#req.body.uid;
+        const res = this.#res;
+
+        UserActivityHistory.findOne({
+            "uid": uid
+        }, function (err, result) {
+            if(err) { ErrorLogger('Query CommemorativeCard status error, '+err, 400, res); return; }
+            if(!result) { ErrorLogger('Cannot get the uid!!', 400, res); return; }
+
+            const act = result.activity.filter(act => act.name===actName);
+            if(act.length !== 1) { ErrorLogger('Multiple same activity', 400, res); return; }
+
+            const pointcards = act[0].pointcard.cardField;
+            let statusStr = "000000";
+
+            for (let i = 0; i < pointcards.length; i++) {
+                if (pointcards[i].value) {
+                    statusStr = statusStr.substr(0, i) + "1" + statusStr.substr(i + 1);
+                }
+            }
+
+            const cardNum = parseInt(statusStr, 2);
+            const output = PICBDIR + `commemorative_card/${ cardNum }.png`;
+            const url = output.split('/').slice(1).join('/');
+            res.status(200).send({msg: 'success!!', url: url});
+        })
+    }
 }
