@@ -30,6 +30,10 @@ router.post('/drawed', function(req, res, next) {
   welcomParty.Drawed();
 });
 
+// CommemorativeCard
+router.post('/commemorativecard', function(req, res, next) {
+  const welcomParty = new WelcomeParty(req, res);
+  welcomParty.CommemorativeCard();
+});
 
 module.exports = router;
-
