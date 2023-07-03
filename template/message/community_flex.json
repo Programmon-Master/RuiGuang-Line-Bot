@@ -5,10 +5,10 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/LZq4dAS.png",
+        "url": "https://bot.ruiguang.minecola.cloud/images/logo/Facebook-Logo.png",
         "size": "full",
         "aspectRatio": "20:13",
-        "aspectMode": "cover"
+        "aspectMode": "fit"
       },
       "body": {
         "type": "box",
@@ -44,7 +44,7 @@
             "action": {
               "type": "uri",
               "label": "立即前往按讚",
-              "uri": "https://fb.ruiguang.link/"
+              "uri": "https://www.facebook.com/RuiGuangIsland/"
             }
           }
         ]
@@ -54,10 +54,10 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/LZq4dAS.png",
         "size": "full",
         "aspectRatio": "20:13",
-        "aspectMode": "cover"
+        "aspectMode": "cover",
+        "url": "https://bot.ruiguang.minecola.cloud/images/logo/Youtube-Logo.png"
       },
       "body": {
         "type": "box",
@@ -93,7 +93,7 @@
             "action": {
               "type": "uri",
               "label": "立即前往訂閱",
-              "uri": "https://yt.ruiguang.link/"
+              "uri": "https://youtube.com/@ruiguang8103"
             }
           }
         ]
@@ -103,7 +103,7 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/LZq4dAS.png",
+        "url": "https://bot.ruiguang.minecola.cloud/images/logo/Line-Logo.png",
         "size": "full",
         "aspectRatio": "20:13",
         "aspectMode": "cover"
@@ -114,7 +114,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "青創｜ Line 社群",
+            "text": "瑞光社宅｜ Line 社群",
             "size": "xl",
             "weight": "bold"
           },
@@ -142,7 +142,56 @@
             "action": {
               "type": "uri",
               "label": "立即加入社群",
-              "uri": "https://line.ruiguang.link/"
+              "uri": "https://line.me/ti/g2/jsWb3u3tKYREKv8r552Dev7z3G4zvqpVyACE0g"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://bot.ruiguang.minecola.cloud/images/logo/Ruiguang-Logo.png",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "更多瑞光 Line 社群",
+            "size": "xl",
+            "weight": "bold"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "size": "sm",
+                "wrap": true,
+                "margin": "xl",
+                "text": "想了解更多「瑞光島居民自發」或「青創」建立的各種主題群組嗎？趕快點擊下面按鈕來取得瑞光島各個社群資訊！"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "瑞光社群介紹",
+              "text": "瑞光社群介紹"
             }
           }
         ]
