@@ -2,7 +2,7 @@
   "type": "bubble",
   "hero": {
     "type": "image",
-    "url": "https://i.imgur.com/feHvNC3.jpg",
+    "url": "https://bot.ruiguang.minecola.cloud/images/youngus/aboutus-2.jpg",
     "size": "full",
     "aspectRatio": "20:13",
     "aspectMode": "cover"
@@ -30,7 +30,7 @@
             "contents": [
               {
                 "type": "text",
-                "text": "由都發局主辦的「社會住宅青年創新回饋計畫」，從上百組提案中遴選出27組青創種子進入社區，旨在透過舉辦豐富活動和進行多元服務，形塑社區特色，建立友善樂居的居住環境。",
+                "text": "由都發局主辦的「社會住宅青年創新回饋計畫」，從上百組提案中遴選出26組青創種子進入社區，旨在透過舉辦豐富活動和進行多元服務，形塑社區特色，建立友善樂居的居住環境。",
                 "wrap": true,
                 "color": "#666666",
                 "size": "sm",
