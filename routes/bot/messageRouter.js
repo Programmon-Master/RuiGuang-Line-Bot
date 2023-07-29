@@ -9,7 +9,7 @@ const getPointCard = require('../../service/pointcard');
 module.exports = async function messageRouter(context) {
     return router([
         text('關於青創', (context)=>{ context.replyFlex("請使用手機查看訊息", aboutUsFlex); }),
-        text('便民服務', (context)=>{ context.replyFlex("請使用手機查看訊息", informationFlex); }),
+        text('便民提醒', (context)=>{ context.replyFlex("請使用手機查看訊息", informationFlex); }),
         text('青創介紹', (context)=>{
             context.reply([
                 Line.createImage({
