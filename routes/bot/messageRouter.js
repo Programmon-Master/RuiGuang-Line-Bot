@@ -3,6 +3,7 @@ const { router, text } = require('bottender/router');
 const informationFlex = require('../../template/message/information_flex.json');
 const aboutUsFlex = require('../../template/message/aboutUs_flex.json');
 const communityFlex = require('../../template/message/community_flex.json');
+const linegroupFlex = require('../../template/message/linegroup_flex.json');
 const getPointCard = require('../../service/pointcard');
 
 module.exports = async function messageRouter(context) {
@@ -34,6 +35,7 @@ module.exports = async function messageRouter(context) {
             ]);
         }),
         text('瑞光社群', (context)=>{ context.replyFlex("請使用手機查看訊息", communityFlex); }),
+        text('瑞光社群介紹', (context)=>{ context.replyFlex("請使用手機查看訊息", linegroupFlex); }),
         text('我的入厝闖關卡', getPointCard )
     ]);
 }
