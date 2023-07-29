@@ -1,0 +1,188 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "便民提醒",
+        "weight": "bold",
+        "size": "xxl",
+        "margin": "md"
+      },
+      {
+        "type": "text",
+        "text": "請點擊右方藍色文字來查看更多資訊",
+        "size": "xs",
+        "color": "#aaaaaa",
+        "wrap": true
+      },
+      {
+        "type": "separator",
+        "margin": "xxl"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "xxl",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "生活 / 繳費",
+            "weight": "bold",
+            "color": "#1DB446",
+            "size": "md",
+            "margin": "none",
+            "offsetBottom": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "水費繳納",
+                "size": "sm",
+                "color": "#555555",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "偶數月繳納 / 查看更多",
+                "size": "sm",
+                "color": "#255e9a",
+                "align": "end",
+                "action": {
+                  "type": "message",
+                  "label": "billing_water",
+                  "text": "水費資訊"
+                }
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "電費繳納",
+                "size": "sm",
+                "color": "#555555",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "奇數月繳納 / 查看更多",
+                "size": "sm",
+                "color": "#255e9a",
+                "align": "end",
+                "action": {
+                  "type": "message",
+                  "label": "billing_power",
+                  "text": "電費資訊"
+                }
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "瓦斯費繳納",
+                "size": "sm",
+                "color": "#555555",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "偶數月繳納 / 查看更多",
+                "size": "sm",
+                "color": "#255e9a",
+                "align": "end",
+                "action": {
+                  "type": "message",
+                  "label": "billing_gas",
+                  "text": "瓦斯資訊"
+                }
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "垃圾 / 回收時段",
+                "size": "sm",
+                "color": "#555555",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "查看更多",
+                "size": "sm",
+                "color": "#255e9a",
+                "align": "end",
+                "action": {
+                  "type": "message",
+                  "label": "information_trash",
+                  "text": "垃圾及回收時段資訊"
+                }
+              }
+            ]
+          },
+          {
+            "type": "separator",
+            "margin": "xxl"
+          },
+          {
+            "type": "text",
+            "text": "周邊租賃",
+            "weight": "bold",
+            "color": "#1DB446",
+            "size": "md",
+            "margin": "none",
+            "offsetBottom": "sm",
+            "offsetTop": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "margin": "xxl",
+            "contents": [
+              {
+                "type": "text",
+                "text": "瑞光社宅地下停車場",
+                "size": "sm",
+                "color": "#555555"
+              },
+              {
+                "type": "text",
+                "text": "季繳納 / 查看更多",
+                "size": "sm",
+                "color": "#255e9a",
+                "align": "end",
+                "action": {
+                  "type": "message",
+                  "label": "billing_car",
+                  "text": "停車場資訊"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "styles": {
+    "footer": {
+      "separator": true
+    }
+  }
+}

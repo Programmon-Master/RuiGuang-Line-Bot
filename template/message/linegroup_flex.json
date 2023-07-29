@@ -1,0 +1,1105 @@
+{
+    "type": "carousel",
+    "contents": [
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "資訊 / 科學手作 DIY",
+              "weight": "bold",
+              "size": "sm",
+              "wrap": true
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "瑞光好資在計畫",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "contents": [],
+                      "size": "sm",
+                      "wrap": true,
+                      "margin": "lg",
+                      "text": "我們不定期會推出各種資訊或科學手做 DIY 課程，同時也歡迎大家在群組內許願課程！",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        },
+                        {
+                          "type": "icon",
+                          "url": "https://cdn-icons-png.flaticon.com/128/10904/10904736.png"
+                        },
+                        {
+                          "type": "text",
+                          "text": "立即加入社團",
+                          "color": "#ffffff",
+                          "flex": 0,
+                          "offsetTop": "-2px",
+                          "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://line.me/ti/g/dKmDIyzrMo"
+                          }
+                        },
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "spacing": "sm"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "spacing": "sm",
+                  "borderColor": "#ffffff",
+                  "margin": "xxl",
+                  "height": "40px"
+                }
+              ],
+              "paddingAll": "13px",
+              "cornerRadius": "10px",
+              "margin": "xl",
+              "backgroundColor": "#81D4FA"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "共享冰箱",
+              "weight": "bold",
+              "size": "sm",
+              "wrap": true
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "冰冰有禮計畫",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "contents": [],
+                      "size": "sm",
+                      "wrap": true,
+                      "margin": "lg",
+                      "text": "共享冰箱位於社宅三樓料理教室，2023年9月起採群組預約制，歡迎加入群組了解更多！",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        },
+                        {
+                          "type": "icon",
+                          "url": "https://cdn-icons-png.flaticon.com/128/10904/10904736.png"
+                        },
+                        {
+                          "type": "text",
+                          "text": "立即加入社團",
+                          "color": "#ffffff",
+                          "flex": 0,
+                          "offsetTop": "-2px",
+                          "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://line.me/ti/g/JDRi_UvkCr"
+                          }
+                        },
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "spacing": "sm"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "spacing": "sm",
+                  "borderColor": "#ffffff",
+                  "margin": "xxl",
+                  "height": "40px"
+                }
+              ],
+              "paddingAll": "13px",
+              "cornerRadius": "10px",
+              "margin": "xl",
+              "backgroundColor": "#81D4FA"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "舞動瑞光",
+              "weight": "bold",
+              "size": "sm",
+              "wrap": true
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "舞動瑞光，翻轉社區計畫",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "contents": [],
+                      "size": "sm",
+                      "wrap": true,
+                      "margin": "lg",
+                      "text": "歡迎加入舞動瑞光群組，可以在裡組探索：舞蹈課程資訊公告、課程討論、影片分享等相關資訊哦！",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        },
+                        {
+                          "type": "icon",
+                          "url": "https://cdn-icons-png.flaticon.com/128/10904/10904736.png"
+                        },
+                        {
+                          "type": "text",
+                          "text": "立即加入社團",
+                          "color": "#ffffff",
+                          "flex": 0,
+                          "offsetTop": "-2px",
+                          "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://line.me/ti/g2/MDDkJEs7TM0Bci_ypdiaHTYmX-2Hk4Kzl2PUbg"
+                          }
+                        },
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "spacing": "sm"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "spacing": "sm",
+                  "borderColor": "#ffffff",
+                  "margin": "xxl",
+                  "height": "40px"
+                }
+              ],
+              "paddingAll": "13px",
+              "cornerRadius": "10px",
+              "margin": "xl",
+              "backgroundColor": "#81D4FA"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "瑞光椅子健身操 / 橄欖球瑜珈",
+              "weight": "bold",
+              "size": "sm",
+              "wrap": true
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "橄動瑞光 - 創造\"心\"連結計畫",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "contents": [],
+                      "size": "sm",
+                      "wrap": true,
+                      "margin": "lg",
+                      "text": "坐式椅子健身操、橄欖球瑜伽野餐活動、帶式橄欖球體驗活動，歡迎大家來運動！",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        },
+                        {
+                          "type": "icon",
+                          "url": "https://cdn-icons-png.flaticon.com/128/10904/10904736.png"
+                        },
+                        {
+                          "type": "text",
+                          "text": "立即加入社團",
+                          "color": "#ffffff",
+                          "flex": 0,
+                          "offsetTop": "-2px",
+                          "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://line.me/R/ti/g/PQR2K4nNLZ"
+                          }
+                        },
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "spacing": "sm"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "spacing": "sm",
+                  "borderColor": "#ffffff",
+                  "margin": "xxl",
+                  "height": "40px"
+                }
+              ],
+              "paddingAll": "13px",
+              "cornerRadius": "10px",
+              "margin": "xl",
+              "backgroundColor": "#81D4FA"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "weight": "bold",
+              "size": "sm",
+              "wrap": true,
+              "text": "瑞光手作"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "鉤針手作編織 療癒身心靈計畫",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "contents": [],
+                      "size": "sm",
+                      "wrap": true,
+                      "margin": "lg",
+                      "text": "愜意的週六下午，藉由茶香與編織手作的過程來舒壓放鬆療癒身心靈的同時，也創作出屬於自己的風格作品～",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        },
+                        {
+                          "type": "icon",
+                          "url": "https://cdn-icons-png.flaticon.com/128/10904/10904736.png"
+                        },
+                        {
+                          "type": "text",
+                          "text": " 立即加入 Line@",
+                          "color": "#ffffff",
+                          "flex": 0,
+                          "offsetTop": "-2px",
+                          "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://line.me/R/ti/p/@905lelau"
+                          }
+                        },
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "spacing": "sm"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "spacing": "sm",
+                  "borderColor": "#ffffff",
+                  "margin": "xxl",
+                  "height": "40px"
+                }
+              ],
+              "paddingAll": "13px",
+              "cornerRadius": "10px",
+              "margin": "xl",
+              "backgroundColor": "#81D4FA"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "瑞光登山休閒團",
+              "weight": "bold",
+              "size": "sm",
+              "wrap": true
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs",
+                      "flex": 5,
+                      "text": "-"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "contents": [],
+                      "size": "sm",
+                      "wrap": true,
+                      "margin": "lg",
+                      "text": "帶領瑞光居民走訪名山古蹟，探索這塊被群山包圍的寶地，休閒踏青也一起守護山林環境。",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        },
+                        {
+                          "type": "icon",
+                          "url": "https://cdn-icons-png.flaticon.com/128/10904/10904736.png"
+                        },
+                        {
+                          "type": "text",
+                          "text": "立即加入社團",
+                          "color": "#ffffff",
+                          "flex": 0,
+                          "offsetTop": "-2px",
+                          "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://line.me/ti/g2/Ae_WM91G5BYeOjDzg-1Alc9xg0QPGRUZkW7AhA"
+                          }
+                        },
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "spacing": "sm"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "spacing": "sm",
+                  "borderColor": "#ffffff",
+                  "margin": "xxl",
+                  "height": "40px"
+                }
+              ],
+              "paddingAll": "13px",
+              "cornerRadius": "10px",
+              "margin": "xl",
+              "backgroundColor": "#81D4FA"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "weight": "bold",
+              "size": "sm",
+              "wrap": true,
+              "text": "凹豆路書"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "光·和作用 + \n來場湖光島大冒險｜讓微冒險成為日常計畫",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "contents": [],
+                      "size": "sm",
+                      "wrap": true,
+                      "margin": "lg",
+                      "text": "專屬瑞光島的凹豆同好平台， 帶領島民暢遊內湖戶外景點、露營、野餐『讓日子不再是生存，而是享受生活。』",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        },
+                        {
+                          "type": "icon",
+                          "url": "https://cdn-icons-png.flaticon.com/128/10904/10904736.png"
+                        },
+                        {
+                          "type": "text",
+                          "text": "立即加入社團",
+                          "color": "#ffffff",
+                          "flex": 0,
+                          "offsetTop": "-2px",
+                          "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://line.me/ti/g2/tyRQsMvLjUmy3t-RqbMTXDZoERrVfClNw6E3Gw"
+                          }
+                        },
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "spacing": "sm"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "spacing": "sm",
+                  "borderColor": "#ffffff",
+                  "margin": "xxl",
+                  "height": "40px"
+                }
+              ],
+              "paddingAll": "13px",
+              "cornerRadius": "10px",
+              "margin": "xl",
+              "backgroundColor": "#81D4FA"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "瑞光溜冰好好玩",
+              "weight": "bold",
+              "size": "sm",
+              "wrap": true
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "大人小孩的花式溜冰教學計畫",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "contents": [],
+                      "size": "sm",
+                      "wrap": true,
+                      "margin": "lg",
+                      "text": "歡迎社宅的小朋友們和溜冰教練一起快樂學習花式溜冰！",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        },
+                        {
+                          "type": "icon",
+                          "url": "https://cdn-icons-png.flaticon.com/128/10904/10904736.png"
+                        },
+                        {
+                          "type": "text",
+                          "text": "立即加入社團",
+                          "color": "#ffffff",
+                          "flex": 0,
+                          "offsetTop": "-2px",
+                          "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://line.me/ti/g/3bOf3TrdOn"
+                          }
+                        },
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "spacing": "sm"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "spacing": "sm",
+                  "borderColor": "#ffffff",
+                  "margin": "xxl",
+                  "height": "40px"
+                }
+              ],
+              "paddingAll": "13px",
+              "cornerRadius": "10px",
+              "margin": "xl",
+              "backgroundColor": "#81D4FA"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "weight": "bold",
+              "size": "sm",
+              "wrap": true,
+              "text": "瑞光熱血籃球魂-訓練營"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "瑞光熱血籃球魂計畫",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "contents": [],
+                      "size": "sm",
+                      "wrap": true,
+                      "margin": "lg",
+                      "text": "揪團打球並宣傳籃球活動，提供打球時間、地點和詳細內容",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        },
+                        {
+                          "type": "icon",
+                          "url": "https://cdn-icons-png.flaticon.com/128/10904/10904736.png"
+                        },
+                        {
+                          "type": "text",
+                          "text": " 立即加入社團",
+                          "color": "#ffffff",
+                          "flex": 0,
+                          "offsetTop": "-2px",
+                          "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "http://line.me/ti/g/p0OgN02PVJ"
+                          }
+                        },
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "spacing": "sm"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "spacing": "sm",
+                  "borderColor": "#ffffff",
+                  "margin": "xxl",
+                  "height": "40px"
+                }
+              ],
+              "paddingAll": "13px",
+              "cornerRadius": "10px",
+              "margin": "xl",
+              "backgroundColor": "#81D4FA"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "瑞光藝術村｜展覽｜體驗｜文創｜活動",
+              "weight": "bold",
+              "size": "sm",
+              "wrap": true
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs",
+                      "flex": 5,
+                      "text": "瑞光藝起來計畫"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "contents": [],
+                      "size": "sm",
+                      "wrap": true,
+                      "margin": "lg",
+                      "text": "#瑞光藝術 #瑞光文創 #瑞光活動 #藝術 #展覽 #體驗",
+                      "color": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        },
+                        {
+                          "type": "icon",
+                          "url": "https://cdn-icons-png.flaticon.com/128/10904/10904736.png"
+                        },
+                        {
+                          "type": "text",
+                          "text": "立即加入社團",
+                          "color": "#ffffff",
+                          "flex": 0,
+                          "offsetTop": "-2px",
+                          "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://line.me/ti/g2/Z6QoOHHByzJ3NXchFlnixSsbQYCwQGbtnoo-rQ"
+                          }
+                        },
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "spacing": "sm"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "spacing": "sm",
+                  "borderColor": "#ffffff",
+                  "margin": "xxl",
+                  "height": "40px"
+                }
+              ],
+              "paddingAll": "13px",
+              "cornerRadius": "10px",
+              "margin": "xl",
+              "backgroundColor": "#81D4FA"
+            }
+          ]
+        }
+      }
+    ]
+  }
